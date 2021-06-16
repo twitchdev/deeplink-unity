@@ -22,11 +22,11 @@ Once the game id has been entered push the "Broadcast" button to start twitch st
 
 On Unity 2021 nothing further is required for this to function
 
-Unity 2020 will require:
+Unity 2020 will require this manifest change:
 
 `<meta-data android:name="unityplayer.UnityActivity" android:value="true" />`
 
-Unity 2019 and older will require (Note this was not tested but should work):
+Unity 2019 and older will require these manifest changes (Note this was not tested but should work):
 
     <activity android:name="com.unity3d.player.UnityPlayerNativeActivity"
               android:label="@string/app_name">
