@@ -27,7 +27,7 @@ Unity 2020 will require:
 
 Unity 2019 and older will require (Note this was not tested but should work):
 
-```<activity android:name="com.unity3d.player.UnityPlayerNativeActivity"
+``` <activity android:name="com.unity3d.player.UnityPlayerNativeActivity"
           android:label="@string/app_name">
   <intent-filter>
     <action android:name="android.intent.action.MAIN" />
@@ -39,7 +39,7 @@ Unity 2019 and older will require (Note this was not tested but should work):
   <meta-data
  android:name="unityplayer.ForwardNativeEventsToDalvik"android:value="false"
   />
-</activity>```
+</activity> ```
 
 ### IOS
 
