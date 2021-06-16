@@ -48,6 +48,12 @@ You must add twitch in LSApplicationQueriesSchemes to your app's Info.plist
 
 To do this you must export to XCODE to manually edit the plist or alternatively do it programatically
 An example of how to do this programtically can be found in Nrjwolf's documentation (Link below)
+plist example:
+
+    <key>LSApplicationQueriesSchemes</key>
+        <array>
+            <string>twitch</string>
+        </array>
 
 More documentation can be found here: https://developer.apple.com/documentation/uikit/uiapplication/1622952-canopenurl?language=objc
 
