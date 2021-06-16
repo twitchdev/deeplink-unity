@@ -44,7 +44,7 @@ Unity 2019 and older will require these manifest changes (Note this was not test
 
 ### IOS
 
-You must add LSApplicationQueriesSchemes to your app's Info.plist
+You must add Twitch in LSApplicationQueriesSchemes to your app's Info.plist
 
 To do this you must export to XCODE to manually edit the plist or alternatively do it programatically
 An example of how to do this programtically can be found in Nrjwolf's documentation (Link below)
