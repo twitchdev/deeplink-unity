@@ -1,3 +1,4 @@
+
 # Twitch Unity Deeplink Sample
 
 ## What does this do
@@ -27,19 +28,19 @@ Unity 2020 will require:
 
 Unity 2019 and older will require (Note this was not tested but should work):
 
-``` <activity android:name="com.unity3d.player.UnityPlayerNativeActivity"
-          android:label="@string/app_name">
-  <intent-filter>
-    <action android:name="android.intent.action.MAIN" />
-    <category android:name="android.intent.category.LAUNCHER" />
-    <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-  </intent-filter>
-  <meta-data android:name="unityplayer.UnityActivity" android:value="true"
-  />
-  <meta-data
- android:name="unityplayer.ForwardNativeEventsToDalvik"android:value="false"
-  />
-</activity> ```
+    <activity android:name="com.unity3d.player.UnityPlayerNativeActivity"
+              android:label="@string/app_name">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+      </intent-filter>
+      <meta-data android:name="unityplayer.UnityActivity" android:value="true"
+      />
+      <meta-data
+     android:name="unityplayer.ForwardNativeEventsToDalvik"android:value="false"
+      />
+    </activity> 
 
 ### IOS
 
