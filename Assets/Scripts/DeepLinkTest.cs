@@ -72,6 +72,7 @@ public class DeepLinkTest : MonoBehaviour
 #endif
 #if UNITY_IOS
             var iosAppLink = "twitch://open/";
+            //Use plugin to call down into IOS's built in "CanOpenURL" function
             if (IOSCanOpenURL.CheckUrl(iosAppLink))
             {
                 isInstalled = true;
@@ -84,9 +85,6 @@ public class DeepLinkTest : MonoBehaviour
         return isInstalled;
     }
 
-    /// <summary>
-    /// There's a better way to do this.
-    /// </summary>
     public void GatherText()
     {
         SetGameID(testInputField.text);
