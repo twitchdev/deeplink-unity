@@ -18,7 +18,7 @@ public class DeepLinkTest : MonoBehaviour
         GameInputField = GameObject.Find("GameIDInputField");
         OpenTwitchButton = GameObject.Find("OpenTwitchButton");
 
-
+        //This check should turn the buttons off if Twitch isn't installed
         if (isTwitchInstalled())
         {
             Debug.Log("Twitch App Installed!");
@@ -41,6 +41,7 @@ public class DeepLinkTest : MonoBehaviour
         
     }
 
+    //A simple function to check if twitch is installed
     private bool isTwitchInstalled()
     {
         bool isInstalled = false;
@@ -95,6 +96,7 @@ public class DeepLinkTest : MonoBehaviour
         Application.OpenURL("twitch://open/");
     }
 
+    //A simple parse to ensure only numbers were entered
     public void SetGameID(string gameID)
     {
 
@@ -113,6 +115,7 @@ public class DeepLinkTest : MonoBehaviour
         }
     }
 
+    //While we treat broadcastGameID as an int in this example, on Twitch's platform it is a string, requiring this conversion
     public void BroadcastGame()
     {
         Application.OpenURL("twitch://broadcast?game_id=" + broadcastGameID.ToString());
